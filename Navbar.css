@@ -1,0 +1,103 @@
+body {
+    background: darkgray;
+}
+
+.nav {
+    background: #343444;
+    border-bottom: 3px solid #fff;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-items {
+    color: #fff;
+}
+
+#navbar {
+    font-size: 25px;
+}
+
+#home {
+    font-size: 25px;
+}
+
+.nav-items ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 5rem;
+}
+
+.nav-list {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-list[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    margin-left: 150px;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-search {
+    height: 50px;
+    width: 80px;
+    background: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-search:hover {
+    background: green;
+    color: #fff;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .nav-list:not(:first-child) {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        background: transparent;
+        margin-left: 50px;
+    }
+
+    .menu-btn svg {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        background: transparent;
+
+    }
+}
